@@ -10,7 +10,6 @@ function promptForId(db, idField, otherField, alias, table, prompt, extraChoices
     .then((result) => {
         // Get the list of items and their associated ids from the query result
         let promptsList = result[0].map((x) => {return {name: x[alias], value: x[idField]}});
-        console.log(promptsList);
         // Prompt the user for the item
         return inquirer.prompt([
             {
