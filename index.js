@@ -24,5 +24,8 @@ mysql.createConnection({
     // Create a new CLI (Command Line Interface object)
     const cli = new CLI(conn);
     // Run the tool
-    cli.chooseAction();
-});
+    return cli.chooseAction().then(() => cli);
+}).then((cli) => {
+    // Quit the mysql connection
+    cli.db.end();
+})
