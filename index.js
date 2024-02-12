@@ -4,4 +4,4 @@ const CLI = require("./lib/cli.js");
 const cli = new CLI();
 
 // Run the tool
-cli.run();
+cli.chooseAction();
