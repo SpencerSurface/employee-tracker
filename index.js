@@ -1,8 +1,6 @@
 const CLI = require("./lib/cli.js");
+const mysql = require("mysql2/promise");
 const figlet = require("figlet");
-
-// Create a new CLI (Command Line Interface object)
-const cli = new CLI();
 
 // Print title
 console.log(figlet.textSync(
@@ -16,5 +14,15 @@ console.log(figlet.textSync(
     }
 ), "\n");
 
-// Run the tool
-cli.chooseAction();
+// Connect to the database
+mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "employees_db"
+}).then((conn) => {
+    // Create a new CLI (Command Line Interface object)
+    const cli = new CLI(conn);
+    // Run the tool
+    cli.chooseAction();
+});
