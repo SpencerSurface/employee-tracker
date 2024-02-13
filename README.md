@@ -4,7 +4,7 @@
 
 This project is a command line tool to manage a company's employee database. This tool allows users to manager employee information from the command line, allowing workers who are not developers to interact with the company's employee database.
 
-This projext is written in JavaScript to be run in Node.js, and SQL to be run in MySQL. It utilizes the package `inquirer.js` tp handle user interaction, `mysql2.js` to allow the JavaScript code to interact with the MySQL server, and `figlet` to provide ASCII-art lettering.
+This project is written in JavaScript to be run in Node.js, and SQL to be run in MySQL. It utilizes the package `inquirer.js` to handle user interaction, `mysql2.js` to allow the JavaScript code to interact with the MySQL server, and `figlet` to provide ASCII-art lettering.
 
 The SQL code is located in the files in the `db` directory, the main portion of the program is called from `index.js`, the command line interface is implemented in `lib/cli.js`, and a helper function is included as `helpers/promptForId.js`.
 
