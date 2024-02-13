@@ -20,7 +20,7 @@ You may need to change the value of the password the tool uses to log into MySQL
 
 To use this tool, navigate to the project's directory in your terminal and run the command `node index.js`. Follow the command line prompts to use the tool. 
 
-A walkthrough of the functionality of the tool is provided in the following video: [Walkthrough video](./walkthrough.webm)
+A walkthrough of some of the functionality of the tool is provided in the following video: [Walkthrough video](./walkthrough.webm). The video covers the options to view all departments, roles, and employees; add a department, role, and employee; and updating an employee's role.
 
 ## Credits
 
